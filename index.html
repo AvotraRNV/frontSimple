@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AVATARIA</title>
+  <meta name="description" content="AVATARIA - Créez et publiez automatiquement du contenu engageant pour Facebook, Instagram, LinkedIn et YouTube grâce à votre avatar IA.">
+  <meta property="og:title" content="AVATARIA - Génération de contenu social automatisé">
+  <meta property="og:description" content="Créez et publiez automatiquement du contenu engageant pour les réseaux sociaux avec votre avatar IA.">
+  <meta property="og:image" content="https://picsum.photos/1200/630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --start: #2563EB;
+      --end: #8B5CF6;
+    }
+    .gradient-text {
+      background: linear-gradient(to right, var(--start), var(--end));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gradient-bg {
+      background: linear-gradient(to right, var(--start), var(--end));
+    }
+  </style>
+</head>
+<body class="antialiased text-gray-800">
+
+<!-- Header -->
+<header id="header" class="fixed top-0 inset-x-0 z-50 transition-all">
+  <nav class="max-w-7xl mx-auto flex items-center justify-between p-4 sm:px-6 lg:px-8">
+    <a href="#" class="flex items-center text-xl font-bold gradient-text">
+      <img src="logo-white.jpg"  alt="Logo" class="w-10 h-10 mr-2 rounded-full"> <!-- Image à côté du texte -->
+      AVATARIA
+    </a>
+    <ul class="hidden md:flex items-center gap-6">
+      <li><a href="#features" class="text-blue-700 hover:text-blue-900">Fonctionnalités</a></li>
+      <li><a href="#pricing" class="text-blue-700 hover:text-blue-900">Tarifs</a></li>
+      <li><a href="#contact" class="text-blue-700 hover:text-blue-900">Contact</a></li>
+    </ul>
+    <a href="#" class="ml-4 inline-flex items-center rounded-full px-6 py-3 font-medium text-white gradient-bg shadow hover:opacity-90 transition">S’inscrire</a>
+  </nav>
+</header>
+
+
+  <section class="relative pt-32 pb-20">
+    <!-- Image de fond transparente -->
+    <img src="test.png" class="absolute inset-0 w-full h-full object-cover opacity-90" alt="background">
+  
+    <!-- Contenu du hero -->
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-white">Votre avatar, votre contenu, partout.</h1>
+        <p class="mt-6 text-lg text-white/90">
+          Générez automatiquement des publications pour Facebook, Instagram, LinkedIn et YouTube grâce à l’intelligence artificielle.
+        </p>
+        <div class="mt-8 flex gap-4">
+          <a href="#" class="rounded-full px-6 py-3 font-medium text-white bg-gradient-to-r from-indigo-500 to-purple-600 shadow hover:opacity-90 transition">
+            Commencer
+          </a>
+          <a href="#features" class="rounded-full px-6 py-3 font-medium text-white border border-white hover:bg-white hover:text-gray-800 transition">
+            En savoir plus
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Social Previews -->
+  <section class="py-20 bg-white" id="features">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-12 gradient-text">Aperçu des publications générées</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        
+        <!-- Facebook -->
+        <article class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden border">
+          <header class="flex items-center gap-3 p-4">
+            <img src="test.png" alt="Profil Facebook" class="w-10 h-10 rounded-full object-cover">
+            <div>
+              <p class="font-semibold text-sm">Jean Dupont</p>
+              <p class="text-xs text-gray-500">Il y a 2 h · 🌍</p>
+            </div>
+          </header>
+          <p class="px-4 text-sm text-gray-800 mb-2">Une nouvelle idée géniale générée par mon avatar IA 🤖🚀</p>
+          <img src="test.png" alt="Publication Facebook" class="w-full object-cover">
+          <footer class="p-4 flex justify-between text-xs text-gray-600">
+            <span>👍 ❤️ 😮 125</span>
+            <span>32 commentaires · 10 partages</span>
+          </footer>
+        </article>
+
+        <!-- Instagram -->
+        <article class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden border">
+          <header class="flex items-center justify-between p-4">
+            <div class="flex items-center gap-3">
+              <img src="test.png" alt="Profil Instagram" class="w-10 h-10 rounded-full object-cover">
+              <p class="font-semibold text-sm">AVATARIA</p>
+            </div>
+            <span class="text-gray-500">•••</span>
+          </header>
+          <img src="test.png" alt="Publication Instagram" class="w-full object-cover">
+          <footer class="p-4 space-y-2 text-sm">
+            <div class="flex gap-4 text-xl">
+              ❤️ 💬 📤
+            </div>
+            <p class="font-semibold">152 j’aime</p>
+            <p><span class="font-semibold">AVATARIA</span> Mon avatar crée du contenu stylé 🌟</p>
+            <p class="text-gray-500 text-xs">Voir les 25 commentaires</p>
+          </footer>
+        </article>
+
+        <!-- LinkedIn -->
+        <article class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden border">
+          <header class="flex items-center gap-3 p-4">
+            <img src="test.png" alt="Profil LinkedIn" class="w-10 h-10 rounded-full object-cover">
+            <div>
+              <p class="font-semibold text-sm">Marie Curie</p>
+              <p class="text-xs text-gray-500">3 h · 🔗</p>
+            </div>
+          </header>
+          <p class="px-4 text-sm text-gray-800 mb-2">Automatiser son contenu n’a jamais été aussi simple grâce à AVATARIA.</p>
+          <img src="test.png" alt="Publication LinkedIn" class="w-full object-cover">
+          <footer class="p-4 flex justify-between text-xs text-gray-600">
+            <span>👍 👏 💡 ❤️ 210</span>
+            <span>58 commentaires · 12 partages</span>
+          </footer>
+        </article>
+
+        <!-- YouTube -->
+        <article class="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden border">
+          <div class="relative">
+            <img src="test.png" alt="Miniature YouTube" class="w-full object-cover">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center text-white text-3xl">▶</div>
+            </div>
+          </div>
+          <div class="p-4">
+            <h3 class="font-semibold text-sm mb-1">Comment j’ai automatisé mes vidéos avec AVATARIA</h3>
+            <p class="text-xs text-gray-500">Chaîne IA · 12 k vues · il y a 1 jour</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Steps -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold gradient-text mb-12">Comment ça marche ?</h2>
+      <div class="grid md:grid-cols-3 gap-12">
+        <div>
+          <div class="w-12 h-12 mx-auto flex items-center justify-center rounded-full gradient-bg text-white font-bold">1</div>
+          <h3 class="mt-4 font-semibold">Configurez votre avatar</h3>
+          <p class="mt-2 text-gray-600 text-sm">Personnalisez votre avatar</p>
+        </div>
+        <div>
+          <div class="w-12 h-12 mx-auto flex items-center justify-center rounded-full gradient-bg text-white font-bold">2</div>
+          <h3 class="mt-4 font-semibold">Créez votre contenue</h3>
+          <p class="mt-2 text-gray-600 text-sm">Vidéo, image</p>
+        </div>
+        <div>
+          <div class="w-12 h-12 mx-auto flex items-center justify-center rounded-full gradient-bg text-white font-bold">3</div>
+          <h3 class="mt-4 font-semibold">Publiez automatiquement</h3>
+          <p class="mt-2 text-gray-600 text-sm">Diffusez sur tous vos réseaux en un clic.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="py-20 bg-white" id="pricing">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold gradient-text mb-12">Tarifs simples et transparents</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Free -->
+        <div class="rounded-2xl shadow hover:shadow-lg transition p-8 border">
+          <h3 class="text-lg font-semibold">Free</h3>
+          <p class="mt-4 text-4xl font-bold">0€<span class="text-lg font-normal">/mois</span></p>
+          <ul class="mt-6 space-y-2 text-sm text-gray-600">
+            <li>✔ 10 posts / mois</li>
+            <li>✔ Accès avatar de base</li>
+            <li>✘ Support prioritaire</li>
+          </ul>
+          <a href="#" class="mt-6 inline-block rounded-full px-6 py-3 font-medium text-white gradient-bg shadow hover:opacity-90 transition">Commencer</a>
+        </div>
+        <!-- Pro -->
+        <div class="rounded-2xl shadow-lg border-2 border-indigo-500 p-8 relative">
+          <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-indigo-500 text-white text-xs font-semibold px-3 py-1 rounded-full">Le plus populaire</span>
+          <h3 class="text-lg font-semibold">Pro</h3>
+          <p class="mt-4 text-4xl font-bold">29€<span class="text-lg font-normal">/mois</span></p>
+          <ul class="mt-6 space-y-2 text-sm text-gray-600">
+            <li>✔ Posts illimités</li>
+            <li>✔ Avatars avancés</li>
+            <li>✔ Support prioritaire</li>
+          </ul>
+          <a href="#" class="mt-6 inline-block rounded-full px-6 py-3 font-medium text-white gradient-bg shadow hover:opacity-90 transition">Choisir Pro</a>
+        </div>
+        <!-- Entreprise -->
+        <div class="rounded-2xl shadow hover:shadow-lg transition p-8 border">
+          <h3 class="text-lg font-semibold">Entreprise</h3>
+          <p class="mt-4 text-4xl font-bold">99€<span class="text-lg font-normal">/mois</span></p>
+          <ul class="mt-6 space-y-2 text-sm text-gray-600">
+            <li>✔ Posts illimités</li>
+            <li>✔ Avatars personnalisés</li>
+            <li>✔ API & intégrations</li>
+          </ul>
+          <a href="#" class="mt-6 inline-block rounded-full px-6 py-3 font-medium text-white gradient-bg shadow hover:opacity-90 transition">Contacter</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-20 gradient-bg text-white text-center">
+    <h2 class="text-3xl font-bold mb-4">Prêt à lancer votre avatar ?</h2>
+    <p class="mb-8">Commencez dès aujourd’hui et créez vos premiers contenus gratuitement.</p>
+    <a href="#" class="rounded-full px-6 py-3 font-medium bg-white text-indigo-600 hover:bg-gray-100 transition">Créer mon compte</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 bg-gray-900 text-gray-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-4 gap-8">
+      <div>
+        <h3 class="text-white font-semibold mb-4">AVATARIA</h3>
+        <p class="text-sm">La plateforme qui génère vos contenus sociaux automatiquement grâce à l’IA.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4">Produit</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#">Fonctionnalités</a></li>
+          <li><a href="#">Tarifs</a></li>
+          <li><a href="#">Mises à jour</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4">Société</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">Carrières</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4">Légal</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#">Conditions d’utilisation</a></li>
+          <li><a href="#">Confidentialité</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-12 text-center text-sm text-gray-500">© 2025 AVATARIA. Tous droits réservés.</div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Header shrink on scroll
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 10) {
+        header.classList.add('bg-white/80','backdrop-blur','shadow');
+      } else {
+        header.classList.remove('bg-white/80','backdrop-blur','shadow');
+      }
+    });
+  </script>
+</body>
+</html>
